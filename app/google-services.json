@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "995398560619",
+    "firebase_url": "https://switchingshifts-69326.firebaseio.com",
+    "project_id": "switchingshifts-69326",
+    "storage_bucket": "switchingshifts-69326.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995398560619:android:7d259c841e42d3de1c3a2e",
+        "android_client_info": {
+          "package_name": "com.example.switchingshifts"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995398560619-56flc2i10bhasqi3pn18r412dkpkbrd6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.switchingshifts",
+            "certificate_hash": "a50b287a900b5d27d7ddad11b5c98e22bafbf67b"
+          }
+        },
+        {
+          "client_id": "995398560619-6iop6c8gvmp2n7jpr12e793ctkpdtor9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.switchingshifts",
+            "certificate_hash": "95b2e875f07f6e812083dbaadcf0988cb34fb69d"
+          }
+        },
+        {
+          "client_id": "995398560619-p7e8dvir4mgv32iv8h8vidmb7n61b87q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkAH03r5I2tiWfOPm1a4Q9dS3WTRz-VPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995398560619-p7e8dvir4mgv32iv8h8vidmb7n61b87q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

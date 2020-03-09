@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".DeleteShift">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/delete_add_shift"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Add_delete_title"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:text="@string/remove_shift"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CheckBox
+        android:id="@+id/delete_for_sure"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="456dp"
+        android:layout_marginEnd="36dp"
+        android:buttonTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="@string/delete_worker_for_sure"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

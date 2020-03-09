@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".RemoveWorker">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/remove_worker_title"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:text="@string/remove_worker"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_role"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/role"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remove_worker_title" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/worker_name"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_role" />
+
+
+    <Spinner
+        android:id="@+id/spinner_worker_type"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remove_worker_title" />
+
+    <Spinner
+        android:id="@+id/spinner_workers_name"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginRight="208dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_role" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="392dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/OK_button"
+        android:textColor="@color/colorInput"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_worker_type" />
+
+    <TextView
+        android:id="@+id/text_worker_details"
+        android:layout_width="327dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="45dp"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <CheckBox
+        android:id="@+id/delete_for_sure"
+        android:layout_width="336dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="45dp"
+        android:buttonTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="@string/delete_worker_for_sure"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_worker_details" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

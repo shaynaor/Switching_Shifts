@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".AddWorker">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/add_worker_title"
+        android:layout_width="309dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="72dp"
+        android:text="@string/add_worker"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tview_first_name"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/first_name"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_worker_title" />
+
+    <TextView
+        android:id="@+id/tview_last_name"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/last_name"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_first_name" />
+
+    <TextView
+        android:id="@+id/tview_mail"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/login_email"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_last_name" />
+
+    <TextView
+        android:id="@+id/tview_role"
+        android:layout_width="193dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:text="@string/role"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_mail" />
+
+    <EditText
+        android:id="@+id/Etext_first_name"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="210dp"
+        android:gravity="end"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorInput"
+        android:textSize="25sp"
+        android:hint="@string/first_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_worker_title" />
+
+    <EditText
+        android:id="@+id/Etext_last_name"
+        android:layout_width="150dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="210dp"
+        android:gravity="end"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/colorInput"
+        android:textSize="25sp"
+        android:hint="@string/last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etext_first_name" />
+
+    <EditText
+        android:id="@+id/Etext_mail"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/login_email"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etext_last_name" />
+
+    <Spinner
+        android:id="@+id/spinner_worker_type"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="196dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Etext_mail" />
+
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/OK_button"
+        android:textColor="@color/colorInput"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_worker_type" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="311dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="45dp"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tview_role" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".PersonalDetails">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/personal_information"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <TextView
+        android:id="@+id/personalNameText"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/first_name"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/personalName"
+        android:layout_width="192dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="172dp"
+        android:gravity="start"
+        android:inputType="textPersonName"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameText"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="@string/last_name"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/lastlName"
+        android:layout_width="192dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="244dp"
+        android:gravity="start"
+        android:inputType="textShortMessage|text"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mailText"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/login_email"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="312dp"
+        android:background="@android:color/transparent"
+        android:gravity="start"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/birthday"
+        android:layout_width="192dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="388dp"
+        android:gravity="start"
+        android:inputType="date"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.305"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/birthdayText"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/birthday"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/birthday"
+        app:layout_constraintTop_toBottomOf="@+id/mailText" />
+
+    <Button
+        android:id="@+id/buttonNewPess"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/new_pess"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButton"
+        app:layout_constraintTop_toBottomOf="@+id/birthdayText" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/save"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonNewPess"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birthday" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

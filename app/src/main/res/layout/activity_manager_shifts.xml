@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".ManagerShifts">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/myShiftTitle"
+        android:layout_width="285dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/workers_shifts"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar" />
+
+    <Spinner
+        android:id="@+id/spinner_worker_type"
+        android:layout_width="173dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="60dp"
+        android:background="@color/spinner_background"
+        app:layout_constraintEnd_toStartOf="@+id/text_role"
+        app:layout_constraintTop_toBottomOf="@+id/myShiftTitle" />
+
+    <ScrollView
+        android:id="@+id/my_shifts"
+        android:layout_width="397dp"
+        android:layout_height="448dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myShiftTitle">
+
+
+        <TextView
+            android:id="@+id/shifts_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/text_role"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/role"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myShiftTitle" />
+
+    <Button
+        android:id="@+id/button_display_shift"
+        android:layout_width="134dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/display_shift"
+        android:textColor="@color/colorInput"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_role" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

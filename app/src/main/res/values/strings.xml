@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Switching shifts</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="msg">התחבר</string>
+
+    <string name="pass">סיסמא</string>
+
+    <string name="worker_number">מספר עובד</string>
+    <string name="personPic">personPic</string>
+    <string name="welcome_string">ברוכים הבאים!</string>
+
+    <string name="new_pess">איפוס סיסמא</string>
+    <string name="first_new_pess">הזן סיסמא חדשה</string>
+    <string name="second_new_pess">אשר את הסיסמא החדשה</string>
+    <string name="OK_button">אישור</string>
+
+    <string name="hello">שלום</string>
+    <string name="hello_manger">שלום מנהל</string>
+    <string name="add_shift">הוסף משמרת</string>
+    <string name="remove_shift">מחק משמרת</string>
+    <string name="add_worker">הוסף עובד</string>
+    <string name="remove_worker">מחק עובד</string>
+
+
+    <string name="choose_role">בחר תפקיד</string>
+    <string name="choose_shift">בחר משמרת</string>
+    <string name="day">בחר תאריך</string>
+    <string name="shift">משמרת</string>
+    <string name="Shifts">משמרות</string>
+    <string name="logout">התנתק</string>
+    <string name="role">תפקיד</string>
+    <string name="worker">עובד</string>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="waiter">Waiter</string>
+    <string name="barista">Barman</string>
+    <string name="chef">Chef</string>
+    <string name="date">dd/mm/yyyy</string>
+
+
+    <string-array name="shift_type">
+        <item>@string/choose_shift</item>
+        <item>@string/morning</item>
+        <item>@string/evening</item>
+    </string-array>
+
+    <string-array name="role_type">
+        <item>@string/choose_role</item>
+        <item>@string/waiter</item>
+        <item>@string/barista</item>
+        <item>@string/chef</item>
+    </string-array>
+
+    <string name="first_name">שם פרטי</string>
+    <string name="last_name">שם משפחה</string>
+    <string name="worker_name">שם עובד</string>
+    <string name="shift_swap">בחר משמרת שברצונך להחליף</string>
+    <string name="choice">בחר</string>
+    <string name="shift_swap1">בחר משמרת אליה תרצה לעבור</string>
+    <string name="my_shift">המשמרות שלי</string>
+    <string name="personal_information">פרטים אישיים</string>
+    <string name="messages">הודעות</string>
+    <string name="birthday">יום הולדת</string>
+    <string name="home">בית</string>
+    <string name="my_messages">ההודעות שלי</string>
+    <string name="shifts">משמרות</string>
+    <string name="workers_shifts">משמרות עובדים</string>
+    <string name="display_shift">הצג משמרות</string>
+    <string name="delete_worker_for_sure">אני בטוח שאני רוצה למחוק</string>
+    <string name="invaild_mail">כתובת מייל לא תקינה</string>
+    <string name="empty_input">אנא מלא את כל הפרטים</string>
+    <string name="descript">התקשר למנהל</string>
+    <string name="save">שמור</string>
+    <string name="login_email">מייל</string>
+
+</resources>

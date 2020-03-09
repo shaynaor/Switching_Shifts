@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    tools:context=".ManagerScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/back_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginStart="40dp"></androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/hello_title"
+        android:layout_width="309dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hello_manger"
+        android:textColor="@color/colorInput"
+        android:textColorHighlight="#000F0101"
+        android:textColorLink="#00180101"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_add_shift"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/add_shift"
+        android:textColor="@color/colorInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hello_title" />
+
+    <Button
+        android:id="@+id/button_remove_shift"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/remove_shift"
+        android:textColor="@color/colorInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_shift" />
+
+    <Button
+        android:id="@+id/button_add_worker"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/add_worker"
+        android:textColor="@color/colorInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_remove_shift" />
+
+    <Button
+        android:id="@+id/button_remove_worker"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:background="@drawable/login_button_back"
+        android:text="@string/remove_worker"
+        android:textColor="@color/colorInput"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_worker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
